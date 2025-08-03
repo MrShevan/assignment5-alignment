@@ -210,7 +210,7 @@ def output_strs():
 
 @pytest.fixture
 def model_id():
-    return "/data/a5-alignment/models/Qwen2.5-Math-1.5B"
+    return "/assignment5-alignment/models/local-qwen-2_5-math-1_5B"
 
 
 @pytest.fixture
