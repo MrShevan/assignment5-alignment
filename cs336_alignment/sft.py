@@ -61,9 +61,9 @@ def tokenize_prompt_and_output(
         "labels": torch.tensor([
             pad(input_ids, tokenizer.pad_token_id, max_len)[1:] for input_ids in full_tokens_list
         ]),
-        "response_mask": [
+        "response_mask": torch.tensor([
             pad(response_mask, 0, max_len)[1:] for response_mask in response_mask_list
-        ],
+        ]),
     }
 
 
